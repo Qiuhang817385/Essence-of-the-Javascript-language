@@ -1,0 +1,88 @@
+span,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+
+  .card-left {
+    border-radius: 5px;
+    width: 220px;
+    height: 240px;
+    background-color: moccasin;
+  }
+
+  .card-right {
+    margin-left: 20px;
+    align-self: flex-end;
+    position: relative;
+    width: 400px;
+    height: 160px;
+    border: 1px solid red;
+    border-radius: 35px 35px 0 0;
+    background-color: rgb(249, 226, 194);
+    box-shadow: 0 5px 5px rgba(3, 3, 3, 0.2);
+
+    .sub {
+      position: absolute;
+      left: 17px;
+      top: 17px;
+
+      .text {
+        width: 250px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+
+        &.title {
+          font-size: 18px;
+          color: rgb(139, 87, 42);
+        }
+
+        &.subtitle {
+          color: rgb(211, 143, 95);
+        }
+      }
+
+      .foot {
+        font-size: 16px;
+        font-weight: 500;
+        padding-top: 20px;
+
+        .price {
+          color: rgb(206, 131, 81);
+          text-decoration: line-through;
+          padding-right: 20px;
+        }
+
+        .vip {
+          color: rgb(248, 90, 68);
+        }
+      }
+    }
+
+  }
+}
+
+
+
+.yinhao {
+  font-size: 30px;
+  color: rgb(230, 192, 146);
+}
+
+.inner {
+  display: inline-block;
+  height: 25px;
+  font-weight: 500;
+
+
+  &.emph {}
+}

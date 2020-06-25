@@ -1,0 +1,20 @@
+.container {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.imgs:nth-child(1) {
+  transform: translateZ(150px);
+}
+
+.imgs:nth-child(2) {
+  transform: translateY(-150px) rotateX(90deg);
+}
+
+.imgs:nth-child(3) {
+  transform: translateZ(-150px) rotateX(180deg);
+}
+
+.imgs:nth-child(4) {
+  transform: translateY(150px) rotateX(270deg);
+}
