@@ -23,8 +23,10 @@ p {
     position: relative;
     width: 400px;
     height: 160px;
-    border: 1px solid red;
-    border-radius: 35px 35px 0 0;
+    outline: 0;
+    // outline: #0000FF dotted thin;
+    // border: 1px solid red;
+    border-radius: 35px 35px 5px 5px;
     background-color: rgb(249, 226, 194);
     box-shadow: 0 5px 5px rgba(3, 3, 3, 0.2);
 

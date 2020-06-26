@@ -1,0 +1,92 @@
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.containers {
+  width: 100vw;
+  overflow: hidden;
+  // margin: 0 auto;
+  position: relative;
+  transform-style: preserve-3d;
+
+  .outer {
+    width: 420px;
+    height: 233px;
+    // margin: 50px auto;
+    margin-left: 150px;
+    background-color: yellowgreen;
+    position: relative;
+    // overflow: hidden;
+    padding: 10px 0;
+
+    #imgList {
+      // width: 1680px;
+      width: 6100px;
+      list-style: none;
+      position: absolute;
+
+      li {
+        float: left;
+        margin: 0 70px;
+        transition: all 1.3;
+        transform: scale(1);
+        opacity: 0.6;
+
+        &.active {
+          opacity: 1;
+          transform: scale(1.4);
+        }
+
+        img {
+          width: 400px;
+          height: 213px;
+        }
+      }
+    }
+  }
+
+  #navDiv {
+    z-index: 5;
+    position: absolute;
+    bottom: 15px;
+  }
+
+  #navDiv>a {
+    /* display: inline-block; */
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+
+    border: 1px solid yellow;
+    border-radius: 50%;
+    background-color: red;
+    /* 调整背景颜色透明 */
+    opacity: 0.5;
+    /* 兼容ie8 */
+    filter: alpha(opacity=50);
+
+  }
+
+  #navDiv>a:hover {
+    background-color: black;
+  }
+}
+
+// .imgs:nth-child(1) {
+//   transform: translateZ(150px);
+// }
+
+// .imgs:nth-child(2) {
+//   transform: translateY(-150px) rotateX(90deg);
+// }
+
+// .imgs:nth-child(3) {
+//   transform: translateZ(-150px) rotateX(180deg);
+// }
+
+// .imgs:nth-child(4) {
+//   transform: translateY(150px) rotateX(270deg);
+// }

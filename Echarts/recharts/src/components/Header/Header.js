@@ -11,8 +11,8 @@ export default function Header () {
   return (
     <div>
       <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
-        <Item key="echarts1">
-          <NavLink to="echarts1">Echarts1</NavLink>
+        <Item key="CarouseAll">
+          <NavLink to="CarouseAll">CarouseAll</NavLink>
         </Item>
         <Item key="echarts2">
           <NavLink to="echarts2">Echarts2</NavLink>

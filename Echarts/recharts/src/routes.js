@@ -1,6 +1,6 @@
 import React, { lazy } from 'react';
 const Home = lazy(() => import('./pages/Home/Home'))
-const Echarts = lazy(() => import('./pages/Echarts1/Echarts'))
+const CarouseAll = lazy(() => import('./pages/CarouseAll/CarouseAll'))
 const Echarts2 = lazy(() => import('./pages/Echarts2/Echarts'))
 
 const NotFound = ({ location }) => {
@@ -20,8 +20,8 @@ const routes = [
     exact: true
   },
   {
-    path: '/echarts1/:id?',
-    Component: Echarts,
+    path: '/CarouseAll/:id?',
+    Component: CarouseAll,
     exact: true
   },
   {
