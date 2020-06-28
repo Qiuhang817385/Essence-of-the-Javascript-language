@@ -2,12 +2,12 @@ import React, { useEffect } from 'react'
 import './carouse.scss'
 import move from './tool';
 const ulRef = React.createRef();
-const imgList = [
-  '/img/1.jpg',
-  '/img/2.jpg',
-  '/img/3.jpg',
-  '/img/4.jpg',
-]
+// const imgList = [
+//   '/img/1.jpg',
+//   '/img/2.jpg',
+//   '/img/3.jpg',
+//   '/img/4.jpg',
+// ]
 export default function Carouse () {
   let timer;
   let index = 0;

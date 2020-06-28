@@ -11,11 +11,17 @@ export default function Header () {
   return (
     <div>
       <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
-        <Item key="CarouseAll">
+        {/* <Item key="CarouseAll">
           <NavLink to="CarouseAll">CarouseAll</NavLink>
+        </Item> */}
+        <Item key="Echarts1">
+          <NavLink to="Echarts1">Echarts1</NavLink>
         </Item>
         <Item key="echarts2">
           <NavLink to="echarts2">Echarts2</NavLink>
+        </Item>
+        <Item key="TTest">
+          <NavLink to="TTest">TTest</NavLink>
         </Item>
       </Menu>
     </div>
