@@ -1,13 +1,7 @@
 <template>
-  <common-card
-    title="累计用户数"
-    value="1,088,215"
-  >
+  <common-card title="累计用户数" value="1,088,215">
     <template>
-      <div
-        :style="{height: '100%',width:'100%'}"
-        id="total-user-template"
-      />
+      <div :style="{height: '100%',width:'100%'}" id="total-user-template" />
     </template>
     <template v-slot:footer>
       <div class="wrapper-footer">
@@ -30,7 +24,7 @@
 import commonCard from '../../mixins'
 export default {
   mixins: [commonCard],
-  mounted () {
+  mounted() {
     const chartDom = document.getElementById('total-user-template')
     const chart = this.$echarts.init(chartDom)
     chart.setOption({

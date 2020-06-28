@@ -1,13 +1,7 @@
 <template>
-  <common-card
-    title="累计订单量"
-    value="2,123,223"
-  >
+  <common-card title="累计订单量" value="2,123,223">
     <template>
-      <div
-        :style="{height: '100%',width:'100%'}"
-        id="total-order-template"
-      />
+      <div :style="{height: '100%',width:'100%'}" id="total-order-template" />
     </template>
     <template v-slot:footer>
       <span>昨日订单量</span>
@@ -20,7 +14,7 @@
 import commonCard from '../../mixins'
 export default {
   mixins: [commonCard],
-  mounted () {
+  mounted() {
     const chartDom = document.getElementById('total-order-template')
     const chart = this.$echarts.init(chartDom)
     chart.setOption({

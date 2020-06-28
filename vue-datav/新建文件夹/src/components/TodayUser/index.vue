@@ -1,13 +1,7 @@
 <template>
-  <common-card
-    title="今日交易用户数"
-    value="81,014"
-  >
+  <common-card title="今日交易用户数" value="81,014">
     <template>
-      <div
-        :style="{height: '100%',width:'100%'}"
-        id="today-user-template"
-      />
+      <div :style="{height: '100%',width:'100%'}" id="today-user-template" />
     </template>
     <template v-slot:footer>
       <span>退货率</span>
@@ -20,7 +14,7 @@
 import commonCard from '../../mixins'
 export default {
   mixins: [commonCard],
-  mounted () {
+  mounted() {
     const chartDom = document.getElementById('today-user-template')
     const chart = this.$echarts.init(chartDom)
     chart.setOption({
