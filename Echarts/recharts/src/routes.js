@@ -4,6 +4,7 @@ const Home = lazy(() => import('./pages/Home/Home'))
 // webpack只要打包，就会对引入的依赖关系进行检测
 const Echarts2 = lazy(() => import('./pages/Echarts2/Echarts'))
 const Echarts1 = lazy(() => import('./pages/Echarts1/Echarts1'))
+const Echarts3 = lazy(() => import('./pages/Echarts3/Echarts3'))
 const TTest = lazy(() => import('./pages/TTest/index'))
 
 const NotFound = ({ location }) => {
@@ -35,6 +36,11 @@ const routes = [
   {
     path: '/echarts2',
     Component: Echarts2,
+    exact: true
+  },
+  {
+    path: '/echarts3',
+    Component: Echarts3,
     exact: true
   },
   {

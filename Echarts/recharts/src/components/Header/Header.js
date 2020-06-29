@@ -20,6 +20,9 @@ export default function Header () {
         <Item key="echarts2">
           <NavLink to="echarts2">Echarts2</NavLink>
         </Item>
+        <Item key="echarts3">
+          <NavLink to="echarts3">Echarts3</NavLink>
+        </Item>
         <Item key="TTest">
           <NavLink to="TTest">TTest</NavLink>
         </Item>

@@ -1,0 +1,10 @@
+@import "./../../Common.scss";
+
+.echarts3 {
+  @include commonLay;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+}

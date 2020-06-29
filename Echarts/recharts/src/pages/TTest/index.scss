@@ -1,0 +1,8 @@
+.liItem {
+  margin: 10px;
+  border: 1px solid red;
+
+  &.active {
+    border: 1px solid green;
+  }
+}
