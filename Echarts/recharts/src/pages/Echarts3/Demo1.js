@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Row, Card } from 'antd';
-import { option1, option2, option3 } from './option/option1'
+import { option1, option2 } from './option/option1'
 import Theme from './Theme';
 import ReactEcharts from "echarts-for-react";
 import echarts from 'echarts';
