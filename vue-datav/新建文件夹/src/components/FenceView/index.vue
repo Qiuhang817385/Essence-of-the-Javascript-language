@@ -1,28 +1,37 @@
 <template>
   <el-card>
-    <div slot="header" class="clearfix bottom-view-echarts">
+    <div
+      slot="header"
+      class="clearfix bottom-view-echarts"
+    >
       <div class="fence-header">
         <span>分类销量排行</span>
-        <el-radio-group v-model="defaultShang" size="small">
+        <el-radio-group
+          v-model="defaultShang"
+          size="small"
+        >
           <el-radio-button label="品类"></el-radio-button>
           <el-radio-button label="商品"></el-radio-button>
         </el-radio-group>
       </div>
     </div>
     <div class="fence-view-container">
-      <div id="fence-view-echart" :style="{height:'100%'}"></div>
+      <div
+        id="fence-view-echart"
+        :style="{height:'100%'}"
+      ></div>
     </div>
   </el-card>
 </template>
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       defaultShang: '品类',
     }
   },
-  mounted() {
+  mounted () {
     const chartDom = document.getElementById('fence-view-echart')
     const chart = this.$echarts.init(chartDom)
     chart.setOption({
@@ -54,11 +63,11 @@ export default {
       ],
       legend: {
         orient: 'vertical',
-        right: '10%',
+        right: '20%',
         top: '50%',
         data: ['粉面粥店', '简餐便当', '汉堡披萨'],
-        // heigth: 250,
-        // type: 'scroll',
+        heigth: 250,
+        type: 'scroll',
       },
       tooltip: {
         trigger: 'item',
